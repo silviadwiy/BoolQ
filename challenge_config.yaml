@@ -25,8 +25,16 @@ leaderboard:
           "Metric1": {
             "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          "Metric2": {
+          }
+        }
+      }
+  - id: 2
+    schema:
+      {
+        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
+        "default_order_by": "Total",
+        "metadata": {
+          "Metric1": {
             "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           }
@@ -83,7 +91,7 @@ challenge_phases:
         is_visible: True
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
-    allowed_submission_file_types: ".csv"
+#     allowed_submission_file_types: ".csv"
 
 dataset_splits:
   - id: 1
@@ -103,6 +111,6 @@ challenge_phase_splits:
   - challenge_phase_id: 2
     leaderboard_id: 2
     dataset_split_id: 2
-    visibility: 3
+    visibility: 1
     leaderboard_decimal_precision: 2
     is_leaderboard_order_descending: True
